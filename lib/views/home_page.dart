@@ -11,8 +11,53 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Calculadora Idade'),
       ),
-      body: Column(
-        children: [],
+      body: Padding(
+        padding: const EdgeInsets.all(10.0),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  'Data de Nascimento',
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                Text(
+                  'Maio 20, 2022',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  'Hoje',
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),
+                ),
+                Text(
+                  'Abril 26, 2022',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
